@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serenity Massage | จองคิว</title>
-    <style>
+  <style>
     body {
       font-family: sans-serif;
       margin: 0;
@@ -13,23 +13,30 @@
       color: #333;
       text-align: center;
     }
+
     header {
       background: linear-gradient(135deg, #0bb, #0b84a5);
       color: white;
       padding: 20px;
     }
+
+    /* โลโก้ */
     .logo {
-      .logo {
-  max-width: 180px;     /* ขนาด */
-  height: 180px;        /* ความสูง */
-  border-radius: 50%;   /* ทำให้กลม */
-  object-fit: cover;    /* จัดรูปไม่ให้บีบ */
-  display: block;
-  margin: 0 auto 15px;  /* จัดให้อยู่กลาง */
-  border: 3px solid #fff; /* ขอบขาว */
-}
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;          /* วงกลม */
+      object-fit: cover;           /* จัดรูปให้พอดี */
+      display: block;
+      margin: 0 auto 15px;
+      border: 5px solid #fff;      /* ขอบขาว */
+      box-shadow: 
+        0 4px 15px rgba(0,0,0,0.25),   /* เงาดำ */
+        0 0 20px rgba(255,255,255,0.5); /* เงาขาว */
+    }
+
     h1 { margin: 10px 0 5px; }
     p { margin: 0; font-size: 1.2em; }
+
     form {
       background: white;
       padding: 20px;
@@ -39,17 +46,21 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: left;
     }
+
     form label {
       display: block;
       margin: 10px 0 5px;
     }
-    form input, form select {
+
+    form input, form select, form textarea {
       width: 100%;
       padding: 8px;
       margin-bottom: 10px;
       border-radius: 4px;
       border: 1px solid #ccc;
+      font-family: inherit;
     }
+
     form button {
       width: 100%;
       padding: 10px;
@@ -60,19 +71,16 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
     form button:hover {
       background: #097089;
-    }.logo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;          /* วงกลม */
-  object-fit: cover;           /* จัดรูปให้พอดี */
-  display: block;
-  margin: 0 auto 15px;
-  border: 5px solid #fff;      /* ขอบขาว */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25), 
-              0 0 20px rgba(255,255,255,0.5); /* เงาดำ+เงาขาว */
-}
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
   </style>
 </head>
 <body>
