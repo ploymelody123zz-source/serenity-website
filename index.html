@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serenity Massage | จองคิว</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Serenity Massage Logo" class="logo">
+    <h1>Serenity Massage</h1>
+    <p>จองคิวกับเราได้ที่นี่ ✨</p>
+  </header>
+
+  <main>
+    <form id="bookForm">
+      <label>ชื่อ-สกุล</label>
+      <input type="text" id="name" required>
+
+      <label>เบอร์โทร</label>
+      <input type="tel" id="phone" required>
+
+      <label>บริการ</label>
+      <select id="service" required>
+        <option value="">-- เลือกบริการ --</option>
+        <option>นวดไทย</option>
+        <option>นวดน้ำมัน</option>
+        <option>นวดเท้า</option>
+      </select>
+
+      <label>วันที่</label>
+      <input type="date" id="date" required>
+
+      <label>เวลา</label>
+      <input type="time" id="time" required>
+
+      <label>หมายเหตุ (ถ้ามี)</label>
+      <textarea id="note"></textarea>
+
+      <button type="submit">✨ ส่งคำจอง ✨</button>
+    </form>
+
+    <div id="ok" class="ok"></div>
+
+    <h2>📍 แผนที่ร้าน</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.570392582605!2d98.29729831515227!3d7.888309192325365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b00722d0f0b%3A0xe9f7acfc9f24981e!2sSerenity%20massage%20at%20jungceylon!5e0!3m2!1sth!2sth!4v1738535500000"
+      width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </main>
+
+  <footer>
+    © Serenity Massage
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
