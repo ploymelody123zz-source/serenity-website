@@ -122,6 +122,25 @@
     © Serenity Massage
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script>// ----- LINE OA Config -----
+const LINE_ACCESS_TOKEN = "Ed7NZ94i1ZhZQQexdlK2YJ4gOmpK0fFTd30+gdl+OBzxO6m1xndHs8Fw62FQVC3bTaIxrmp4DQbRLXeIWR5a7mQ5y8d2gD2jB0eY06m4dgEz64jJMhA4QKrenOeKTKwifvV9kOzKIHyhYElMsYcU2wdB04t89/1O/w1cDnyilFU=";
+const LINE_USER_ID = "U90e45436f06ea3c6f39dcdada5332200"; // ✅ แก้ตรงนี้
+
+// ฟังก์ชันส่งข้อความเข้า LINE OA
+function sendToLine(message) {
+  fetch("https://api.line.me/v2/bot/message/push", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${LINE_ACCESS_TOKEN}`
+    },
+    body: JSON.stringify({
+      to: LINE_USER_ID,
+      messages: [{ type: "text", text: message }]
+    })
+  })
+  .then(res => console.log("✅ ส่งไป LINE แล้ว"))
+  .catch(err => console.error("❌ Error:", err));
+}
 </body>
 </html>
