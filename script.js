@@ -1,5 +1,5 @@
 // ----- LINE OA Config -----
-const LINE_ACCESS_TOKEN = "Ed7NZ94i1ZhZQQexdlK2YJ4gOmpK0fFTd30+gdl+OBzxO6m1xndHs8Fw62FQVC3bTaIxrmp4DQbRLXeIWR5a7mQ5y8d2gD2jB0eY06m4dgEz64jJMhA4QKrenOeKTKwifvV9kOzKIHyhYElMsYcU2wdB04t89/1O/w1cDnyilFU=";
+const LINE_ACCESS_TOKEN = "BXtLO9isNMpVcD9UVW/YXFwHginEid81ZJy8w63Md8aiMPw2LP1C7IuOO94SSIC1TaIxrmp4DQbRLXeIWR5a7mQ5y8d2gD2jB0eY06m4dgFdv1/sBbyIoOfL6wHVd5FjIym22PyBKrJmkXVlA7wSowdB04t89/1O/w1cDnyilFU=";
 const LINE_USER_ID = "U90e45436f06ea3c6f39dcdada5332200";  // ✅ ใส่ตรงนี้
 
 // ฟังก์ชันส่งข้อความเข้า LINE OA
