@@ -8,7 +8,15 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="logo.png" 
+    <img src="logo.png" alt="logo.png" header img {
+  max-width: 180px;   /* ขนาดโลโก้ */
+  height: 180px;      /* ทำให้เป็นสี่เหลี่ยมจัตุรัส */
+  border-radius: 50%; /* ทำให้กลม */
+  object-fit: cover;  /* จัดรูปไม่ให้บิดเบี้ยว */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #0b84a5; /* ขอบสีฟ้า (ถ้าไม่อยากได้ขอบ ลบบรรทัดนี้ออก) */
+}
     <h1>Serenity Massage</h1>
     <p>จองคิวกับเราได้ที่นี่ ✨</p>
   </header>
